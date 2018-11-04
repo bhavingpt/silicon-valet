@@ -24,6 +24,7 @@ class ViewController: UIViewController {
             self.open =  x["values"]
             print("UPDATED")
             print(self.open)
+            
         })
 
         
@@ -61,7 +62,7 @@ class ViewController: UIViewController {
         var dist = 0.000;
 
         for i in 0..<40 {
-            dist = pow((initCarLat - latitude[i]),2) + pow((initCarLong  - longitude[i]),2);
+            dist = abs(initCarLat - latitude[i]) + abs(initCarLong  - longitude[i]);
             if (dist < minDist && open?[i] == "empty"){
                 minDist = dist
                 long = longitude[i]

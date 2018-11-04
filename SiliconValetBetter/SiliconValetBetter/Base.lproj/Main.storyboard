@@ -17,21 +17,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeV-50-DHH">
-                                <rect key="frame" x="110" y="283" width="132" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Find Parking Space"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="siliconValetBckgnd.png" translatesAutoresizingMaskIntoConstraints="NO" id="DYu-Th-k6B">
+                                <rect key="frame" x="-4" y="0.0" width="379" height="674"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="AxS-7T-Rw5"/>
+                                    <constraint firstAttribute="width" secondItem="DYu-Th-k6B" secondAttribute="height" multiplier="375:667" id="X36-dY-nwj"/>
+                                    <constraint firstAttribute="width" constant="375" id="rqp-k9-yy7"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="53" translatesAutoresizingMaskIntoConstraints="NO" id="0rG-dy-NWa">
+                                <rect key="frame" x="65" y="409" width="263" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeV-50-DHH">
+                                <rect key="frame" x="150" y="460" width="92" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RVb-Ft-jFC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DYu-Th-k6B" firstAttribute="width" secondItem="DYu-Th-k6B" secondAttribute="height" multiplier="375:667" id="3e7-gG-4jR"/>
+                            <constraint firstItem="0rG-dy-NWa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="4Di-d8-V85"/>
+                            <constraint firstItem="DYu-Th-k6B" firstAttribute="width" secondItem="DYu-Th-k6B" secondAttribute="height" multiplier="375:667" id="Bxy-ze-Flz"/>
+                            <constraint firstItem="zeV-50-DHH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GCL-Ym-DF5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0rG-dy-NWa" secondAttribute="trailing" constant="47" id="Sjg-AL-tQT"/>
+                            <constraint firstItem="zeV-50-DHH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TyA-la-nJd"/>
+                            <constraint firstItem="DYu-Th-k6B" firstAttribute="width" secondItem="DYu-Th-k6B" secondAttribute="height" multiplier="375:667" id="VQb-l4-oIX"/>
+                            <constraint firstItem="DYu-Th-k6B" firstAttribute="width" secondItem="DYu-Th-k6B" secondAttribute="height" multiplier="375:667" id="aSq-8S-rjY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zeV-50-DHH" secondAttribute="bottom" constant="149" id="k0Y-nX-vRJ"/>
+                            <constraint firstItem="0rG-dy-NWa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="n23-Tx-MTF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0rG-dy-NWa" secondAttribute="bottom" constant="228" id="r3X-j0-Bz1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="115.59220389805098"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="siliconValetBckgnd.png" width="560" height="896"/>
+    </resources>
 </document>

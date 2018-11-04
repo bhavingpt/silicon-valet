@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F036CAD218EF86F000599D8 /* bestAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F036CAC218EF86F000599D8 /* bestAppIcon.png */; };
+		3F036CAF218F0B4C000599D8 /* siliconBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F036CAE218F0B4C000599D8 /* siliconBackground.png */; };
+		3F036CB1218F5B19000599D8 /* siliconValetBckgnd.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F036CB0218F5B19000599D8 /* siliconValetBckgnd.png */; };
 		3FBE5B50218E5E5A0078CF14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE5B4F218E5E5A0078CF14 /* AppDelegate.swift */; };
 		3FBE5B52218E5E5A0078CF14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE5B51218E5E5A0078CF14 /* ViewController.swift */; };
 		3FBE5B55218E5E5A0078CF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBE5B53218E5E5A0078CF14 /* Main.storyboard */; };
@@ -33,6 +36,9 @@
 
 /* Begin PBXFileReference section */
 		0A2F63EFE3A199790677756D /* Pods-SiliconValetBetter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiliconValetBetter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiliconValetBetter/Pods-SiliconValetBetter.release.xcconfig"; sourceTree = "<group>"; };
+		3F036CAC218EF86F000599D8 /* bestAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bestAppIcon.png; sourceTree = SOURCE_ROOT; };
+		3F036CAE218F0B4C000599D8 /* siliconBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siliconBackground.png; sourceTree = SOURCE_ROOT; };
+		3F036CB0218F5B19000599D8 /* siliconValetBckgnd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siliconValetBckgnd.png; sourceTree = "<group>"; };
 		3FBE5B4C218E5E5A0078CF14 /* SiliconValetBetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiliconValetBetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBE5B4F218E5E5A0078CF14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FBE5B51218E5E5A0078CF14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,9 +116,12 @@
 				3FBE5B53218E5E5A0078CF14 /* Main.storyboard */,
 				3FBE5B56218E5E5B0078CF14 /* Assets.xcassets */,
 				3FBE5B77218EBB350078CF14 /* GoogleService-Info.plist */,
+				3F036CAE218F0B4C000599D8 /* siliconBackground.png */,
+				3F036CB0218F5B19000599D8 /* siliconValetBckgnd.png */,
 				3FBE5B58218E5E5B0078CF14 /* LaunchScreen.storyboard */,
 				3FBE5B75218E69590078CF14 /* siliconValley.png */,
 				3FBE5B5B218E5E5B0078CF14 /* Info.plist */,
+				3F036CAC218EF86F000599D8 /* bestAppIcon.png */,
 				3FBE5B6F218E628A0078CF14 /* ProxyManager.swift */,
 			);
 			path = SiliconValetBetter;
@@ -227,11 +236,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F036CAD218EF86F000599D8 /* bestAppIcon.png in Resources */,
 				3FBE5B5A218E5E5B0078CF14 /* LaunchScreen.storyboard in Resources */,
 				3FBE5B76218E69590078CF14 /* siliconValley.png in Resources */,
 				3FBE5B78218EBB350078CF14 /* GoogleService-Info.plist in Resources */,
 				3FBE5B57218E5E5B0078CF14 /* Assets.xcassets in Resources */,
 				3FBE5B55218E5E5A0078CF14 /* Main.storyboard in Resources */,
+				3F036CAF218F0B4C000599D8 /* siliconBackground.png in Resources */,
+				3F036CB1218F5B19000599D8 /* siliconValetBckgnd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

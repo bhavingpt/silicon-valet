@@ -30,7 +30,7 @@ class ProxyManager: NSObject {
         
         
         // App icon image
-        if let appImage = UIImage(named: "siliconValley") {
+        if let appImage = UIImage(named: "bestAppIcon") {
             let appIcon = SDLArtwork(image: appImage, persistent: true, as: .PNG)
             lifecycleConfiguration.appIcon = appIcon
         }
@@ -77,7 +77,7 @@ class ProxyManager: NSObject {
         }
         
         
-        let sendLocation = SDLSendLocation(longitude : longitude, latitude: latitude, locationName: locationName, locationDescription: "University of Maryland Car Park", address: ["7777 Baltimore Ave, College Park, MD 20740"], phoneNumber: nil, image: nil)
+        let sendLocation = SDLSendLocation(longitude : longitude, latitude: latitude, locationName: locationName, locationDescription: "University of Maryland Car Park", address: ["Baltimore Ave, College Park, MD 20740"], phoneNumber: nil, image: nil)
         
         sdlManager.send(request: sendLocation) { (request, response, error) in
             guard let response = response as? SDLSendLocationResponse else { return }
