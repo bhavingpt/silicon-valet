@@ -15,6 +15,8 @@
 		3FBE5B65218E5E5B0078CF14 /* SiliconValetBetterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE5B64218E5E5B0078CF14 /* SiliconValetBetterTests.swift */; };
 		3FBE5B70218E628A0078CF14 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE5B6F218E628A0078CF14 /* ProxyManager.swift */; };
 		3FBE5B76218E69590078CF14 /* siliconValley.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FBE5B75218E69590078CF14 /* siliconValley.png */; };
+		3FBE5B78218EBB350078CF14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FBE5B77218EBB350078CF14 /* GoogleService-Info.plist */; };
+		3FBE5B79218EBB350078CF14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FBE5B77218EBB350078CF14 /* GoogleService-Info.plist */; };
 		4733AEA3D7347987C8FD4D94 /* Pods_SiliconValetBetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0243F977D3051C612F76F21 /* Pods_SiliconValetBetter.framework */; };
 		EC0292B18FD417F1050E5B98 /* Pods_SiliconValetBetterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4B6E2C0B1FAD298A8EA3B6 /* Pods_SiliconValetBetterTests.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,7 @@
 		3FBE5B66218E5E5B0078CF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FBE5B6F218E628A0078CF14 /* ProxyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyManager.swift; sourceTree = "<group>"; };
 		3FBE5B75218E69590078CF14 /* siliconValley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siliconValley.png; sourceTree = SOURCE_ROOT; };
+		3FBE5B77218EBB350078CF14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		40E4D8B536C3F101FC0E1807 /* Pods-SiliconValetBetter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiliconValetBetter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiliconValetBetter/Pods-SiliconValetBetter.debug.xcconfig"; sourceTree = "<group>"; };
 		C0243F977D3051C612F76F21 /* Pods_SiliconValetBetter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiliconValetBetter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08E40751853CD8DCEA1CD11 /* Pods-SiliconValetBetterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiliconValetBetterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiliconValetBetterTests/Pods-SiliconValetBetterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 				3FBE5B51218E5E5A0078CF14 /* ViewController.swift */,
 				3FBE5B53218E5E5A0078CF14 /* Main.storyboard */,
 				3FBE5B56218E5E5B0078CF14 /* Assets.xcassets */,
+				3FBE5B77218EBB350078CF14 /* GoogleService-Info.plist */,
 				3FBE5B58218E5E5B0078CF14 /* LaunchScreen.storyboard */,
 				3FBE5B75218E69590078CF14 /* siliconValley.png */,
 				3FBE5B5B218E5E5B0078CF14 /* Info.plist */,
@@ -225,6 +229,7 @@
 			files = (
 				3FBE5B5A218E5E5B0078CF14 /* LaunchScreen.storyboard in Resources */,
 				3FBE5B76218E69590078CF14 /* siliconValley.png in Resources */,
+				3FBE5B78218EBB350078CF14 /* GoogleService-Info.plist in Resources */,
 				3FBE5B57218E5E5B0078CF14 /* Assets.xcassets in Resources */,
 				3FBE5B55218E5E5A0078CF14 /* Main.storyboard in Resources */,
 			);
@@ -234,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBE5B79218EBB350078CF14 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +278,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SiliconValetBetter/Pods-SiliconValetBetter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BiSON/BiSON.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SmartDeviceLink/SmartDeviceLink.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BiSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmartDeviceLink.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
