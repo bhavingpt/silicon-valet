@@ -12,11 +12,11 @@ from process import create_img
 
 import cv2
 
-answers = [""] * 40
+answers = ["No data"] * 40
 
 def analyze_image(img_path):
     threads = []
-    for i in range(40):
+    for i in range(7):
         create_img(img_path, i)
         with open('temp.png', 'rb') as ff:
             content = ff.read()
@@ -26,9 +26,14 @@ def analyze_image(img_path):
         threads.append(answer)
         answer.start()
 
+    for i in range(7, 40):
+        answers[i] = "full" # Vid sped up 4x & GCloud limits requests, we cut the requests by 1/4th
+
     for i in threads:
         i.join()
 
+    empty = [j for j in range(len(answers)) if answers[j] == "empty"]
+    print('    Successfully updated the database. Empty spots: ' + str(empty))
     db.reference('/').set({'values' : answers })
 
 def get_prediction(content, i, project_id="cs-342-219716", model_id="ICN8552997040222878665"):
@@ -45,6 +50,8 @@ if __name__ == '__main__':
     cred = credentials.Certificate("/Users/Bhavin/Downloads/cs-342-219716-5ca14b5f4042.json")
     firebase_admin.initialize_app(cred, {'databaseURL':'https://cs-342-219716.firebaseio.com/'})
     count = -10
+    
+    x = None
 
     cap = cv2.VideoCapture('fastcars.mov')
     while(cap.isOpened()):
@@ -52,7 +59,10 @@ if __name__ == '__main__':
         ret, frame = cap.read()
         cv2.imshow('CCTV', frame)
 
-        if count % 500 == 0:
+        if count % 600 == 0:
+            print("Sending image to GCloud for analysis...")
+            if x != None:
+                x.join()
             file_ext = "frame%d.png" % count
             if os.path.exists(file_ext):
                 os.remove(file_ext)
