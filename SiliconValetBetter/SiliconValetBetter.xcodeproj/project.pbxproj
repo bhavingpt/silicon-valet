@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FBE5B50218E5E5A0078CF14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE5B4F218E5E5A0078CF14 /* AppDelegate.swift */; };
+		3FBE5B52218E5E5A0078CF14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE5B51218E5E5A0078CF14 /* ViewController.swift */; };
+		3FBE5B55218E5E5A0078CF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBE5B53218E5E5A0078CF14 /* Main.storyboard */; };
+		3FBE5B57218E5E5B0078CF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBE5B56218E5E5B0078CF14 /* Assets.xcassets */; };
+		3FBE5B5A218E5E5B0078CF14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBE5B58218E5E5B0078CF14 /* LaunchScreen.storyboard */; };
+		3FBE5B65218E5E5B0078CF14 /* SiliconValetBetterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE5B64218E5E5B0078CF14 /* SiliconValetBetterTests.swift */; };
+		3FBE5B70218E628A0078CF14 /* ProxyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE5B6F218E628A0078CF14 /* ProxyManager.swift */; };
+		3FBE5B76218E69590078CF14 /* siliconValley.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FBE5B75218E69590078CF14 /* siliconValley.png */; };
+		4733AEA3D7347987C8FD4D94 /* Pods_SiliconValetBetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0243F977D3051C612F76F21 /* Pods_SiliconValetBetter.framework */; };
+		EC0292B18FD417F1050E5B98 /* Pods_SiliconValetBetterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4B6E2C0B1FAD298A8EA3B6 /* Pods_SiliconValetBetterTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FBE5B61218E5E5B0078CF14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FBE5B44218E5E5A0078CF14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FBE5B4B218E5E5A0078CF14;
+			remoteInfo = SiliconValetBetter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A2F63EFE3A199790677756D /* Pods-SiliconValetBetter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiliconValetBetter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiliconValetBetter/Pods-SiliconValetBetter.release.xcconfig"; sourceTree = "<group>"; };
+		3FBE5B4C218E5E5A0078CF14 /* SiliconValetBetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiliconValetBetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBE5B4F218E5E5A0078CF14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FBE5B51218E5E5A0078CF14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FBE5B54218E5E5A0078CF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FBE5B56218E5E5B0078CF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FBE5B59218E5E5B0078CF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FBE5B5B218E5E5B0078CF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBE5B60218E5E5B0078CF14 /* SiliconValetBetterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiliconValetBetterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBE5B64218E5E5B0078CF14 /* SiliconValetBetterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiliconValetBetterTests.swift; sourceTree = "<group>"; };
+		3FBE5B66218E5E5B0078CF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBE5B6F218E628A0078CF14 /* ProxyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyManager.swift; sourceTree = "<group>"; };
+		3FBE5B75218E69590078CF14 /* siliconValley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siliconValley.png; sourceTree = SOURCE_ROOT; };
+		40E4D8B536C3F101FC0E1807 /* Pods-SiliconValetBetter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiliconValetBetter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiliconValetBetter/Pods-SiliconValetBetter.debug.xcconfig"; sourceTree = "<group>"; };
+		C0243F977D3051C612F76F21 /* Pods_SiliconValetBetter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiliconValetBetter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C08E40751853CD8DCEA1CD11 /* Pods-SiliconValetBetterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiliconValetBetterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiliconValetBetterTests/Pods-SiliconValetBetterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D815001AF859980DB134ADB0 /* Pods-SiliconValetBetterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiliconValetBetterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiliconValetBetterTests/Pods-SiliconValetBetterTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE4B6E2C0B1FAD298A8EA3B6 /* Pods_SiliconValetBetterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiliconValetBetterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FBE5B49218E5E5A0078CF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4733AEA3D7347987C8FD4D94 /* Pods_SiliconValetBetter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBE5B5D218E5E5B0078CF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0292B18FD417F1050E5B98 /* Pods_SiliconValetBetterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B748D390D4B2C716887760 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0243F977D3051C612F76F21 /* Pods_SiliconValetBetter.framework */,
+				DE4B6E2C0B1FAD298A8EA3B6 /* Pods_SiliconValetBetterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FBE5B43218E5E5A0078CF14 = {
+			isa = PBXGroup;
+			children = (
+				3FBE5B4E218E5E5A0078CF14 /* SiliconValetBetter */,
+				3FBE5B63218E5E5B0078CF14 /* SiliconValetBetterTests */,
+				3FBE5B4D218E5E5A0078CF14 /* Products */,
+				418176EEF1E816B4190BE0B8 /* Pods */,
+				13B748D390D4B2C716887760 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3FBE5B4D218E5E5A0078CF14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FBE5B4C218E5E5A0078CF14 /* SiliconValetBetter.app */,
+				3FBE5B60218E5E5B0078CF14 /* SiliconValetBetterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FBE5B4E218E5E5A0078CF14 /* SiliconValetBetter */ = {
+			isa = PBXGroup;
+			children = (
+				3FBE5B4F218E5E5A0078CF14 /* AppDelegate.swift */,
+				3FBE5B51218E5E5A0078CF14 /* ViewController.swift */,
+				3FBE5B53218E5E5A0078CF14 /* Main.storyboard */,
+				3FBE5B56218E5E5B0078CF14 /* Assets.xcassets */,
+				3FBE5B58218E5E5B0078CF14 /* LaunchScreen.storyboard */,
+				3FBE5B75218E69590078CF14 /* siliconValley.png */,
+				3FBE5B5B218E5E5B0078CF14 /* Info.plist */,
+				3FBE5B6F218E628A0078CF14 /* ProxyManager.swift */,
+			);
+			path = SiliconValetBetter;
+			sourceTree = "<group>";
+		};
+		3FBE5B63218E5E5B0078CF14 /* SiliconValetBetterTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FBE5B64218E5E5B0078CF14 /* SiliconValetBetterTests.swift */,
+				3FBE5B66218E5E5B0078CF14 /* Info.plist */,
+			);
+			path = SiliconValetBetterTests;
+			sourceTree = "<group>";
+		};
+		418176EEF1E816B4190BE0B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40E4D8B536C3F101FC0E1807 /* Pods-SiliconValetBetter.debug.xcconfig */,
+				0A2F63EFE3A199790677756D /* Pods-SiliconValetBetter.release.xcconfig */,
+				C08E40751853CD8DCEA1CD11 /* Pods-SiliconValetBetterTests.debug.xcconfig */,
+				D815001AF859980DB134ADB0 /* Pods-SiliconValetBetterTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FBE5B4B218E5E5A0078CF14 /* SiliconValetBetter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBE5B69218E5E5B0078CF14 /* Build configuration list for PBXNativeTarget "SiliconValetBetter" */;
+			buildPhases = (
+				F0F95D3BE3FB67FC69DAEB6F /* [CP] Check Pods Manifest.lock */,
+				3FBE5B48218E5E5A0078CF14 /* Sources */,
+				3FBE5B49218E5E5A0078CF14 /* Frameworks */,
+				3FBE5B4A218E5E5A0078CF14 /* Resources */,
+				B7E69933F307A7947A82573A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiliconValetBetter;
+			productName = SiliconValetBetter;
+			productReference = 3FBE5B4C218E5E5A0078CF14 /* SiliconValetBetter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FBE5B5F218E5E5B0078CF14 /* SiliconValetBetterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBE5B6C218E5E5B0078CF14 /* Build configuration list for PBXNativeTarget "SiliconValetBetterTests" */;
+			buildPhases = (
+				78822DF9BEF06F67B2048152 /* [CP] Check Pods Manifest.lock */,
+				3FBE5B5C218E5E5B0078CF14 /* Sources */,
+				3FBE5B5D218E5E5B0078CF14 /* Frameworks */,
+				3FBE5B5E218E5E5B0078CF14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FBE5B62218E5E5B0078CF14 /* PBXTargetDependency */,
+			);
+			name = SiliconValetBetterTests;
+			productName = SiliconValetBetterTests;
+			productReference = 3FBE5B60218E5E5B0078CF14 /* SiliconValetBetterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FBE5B44218E5E5A0078CF14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = TheReunion;
+				TargetAttributes = {
+					3FBE5B4B218E5E5A0078CF14 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					3FBE5B5F218E5E5B0078CF14 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 3FBE5B4B218E5E5A0078CF14;
+					};
+				};
+			};
+			buildConfigurationList = 3FBE5B47218E5E5A0078CF14 /* Build configuration list for PBXProject "SiliconValetBetter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FBE5B43218E5E5A0078CF14;
+			productRefGroup = 3FBE5B4D218E5E5A0078CF14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FBE5B4B218E5E5A0078CF14 /* SiliconValetBetter */,
+				3FBE5B5F218E5E5B0078CF14 /* SiliconValetBetterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FBE5B4A218E5E5A0078CF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBE5B5A218E5E5B0078CF14 /* LaunchScreen.storyboard in Resources */,
+				3FBE5B76218E69590078CF14 /* siliconValley.png in Resources */,
+				3FBE5B57218E5E5B0078CF14 /* Assets.xcassets in Resources */,
+				3FBE5B55218E5E5A0078CF14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBE5B5E218E5E5B0078CF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78822DF9BEF06F67B2048152 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SiliconValetBetterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7E69933F307A7947A82573A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SiliconValetBetter/Pods-SiliconValetBetter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BiSON/BiSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SmartDeviceLink/SmartDeviceLink.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BiSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmartDeviceLink.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SiliconValetBetter/Pods-SiliconValetBetter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0F95D3BE3FB67FC69DAEB6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SiliconValetBetter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FBE5B48218E5E5A0078CF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBE5B70218E628A0078CF14 /* ProxyManager.swift in Sources */,
+				3FBE5B52218E5E5A0078CF14 /* ViewController.swift in Sources */,
+				3FBE5B50218E5E5A0078CF14 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBE5B5C218E5E5B0078CF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBE5B65218E5E5B0078CF14 /* SiliconValetBetterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FBE5B62218E5E5B0078CF14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FBE5B4B218E5E5A0078CF14 /* SiliconValetBetter */;
+			targetProxy = 3FBE5B61218E5E5B0078CF14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FBE5B53218E5E5A0078CF14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FBE5B54218E5E5A0078CF14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FBE5B58218E5E5B0078CF14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FBE5B59218E5E5B0078CF14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FBE5B67218E5E5B0078CF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FBE5B68218E5E5B0078CF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FBE5B6A218E5E5B0078CF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E4D8B536C3F101FC0E1807 /* Pods-SiliconValetBetter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SiliconValetBetter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TheReunion.SiliconValetBetter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FBE5B6B218E5E5B0078CF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A2F63EFE3A199790677756D /* Pods-SiliconValetBetter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SiliconValetBetter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TheReunion.SiliconValetBetter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FBE5B6D218E5E5B0078CF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C08E40751853CD8DCEA1CD11 /* Pods-SiliconValetBetterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SiliconValetBetterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TheReunion.SiliconValetBetterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiliconValetBetter.app/SiliconValetBetter";
+			};
+			name = Debug;
+		};
+		3FBE5B6E218E5E5B0078CF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D815001AF859980DB134ADB0 /* Pods-SiliconValetBetterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SiliconValetBetterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TheReunion.SiliconValetBetterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiliconValetBetter.app/SiliconValetBetter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FBE5B47218E5E5A0078CF14 /* Build configuration list for PBXProject "SiliconValetBetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBE5B67218E5E5B0078CF14 /* Debug */,
+				3FBE5B68218E5E5B0078CF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FBE5B69218E5E5B0078CF14 /* Build configuration list for PBXNativeTarget "SiliconValetBetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBE5B6A218E5E5B0078CF14 /* Debug */,
+				3FBE5B6B218E5E5B0078CF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FBE5B6C218E5E5B0078CF14 /* Build configuration list for PBXNativeTarget "SiliconValetBetterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBE5B6D218E5E5B0078CF14 /* Debug */,
+				3FBE5B6E218E5E5B0078CF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FBE5B44218E5E5A0078CF14 /* Project object */;
+}
