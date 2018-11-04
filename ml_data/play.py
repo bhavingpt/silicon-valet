@@ -16,7 +16,7 @@ answers = ["No data"] * 40
 
 def analyze_image(img_path):
     threads = []
-    for i in range(40):
+    for i in range(7):
         create_img(img_path, i)
         with open('temp.png', 'rb') as ff:
             content = ff.read()
@@ -25,6 +25,9 @@ def analyze_image(img_path):
         answer = threading.Thread(target=get_prediction, args = (content, i), kwargs = {})
         threads.append(answer)
         answer.start()
+
+    for i in range(7, 40):
+        answers[i] = "full" # Vid sped up 4x & GCloud limits requests, we cut the requests by 1/4th
 
     for i in threads:
         i.join()
