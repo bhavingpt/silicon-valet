@@ -56,7 +56,7 @@ if __name__ == '__main__':
         ret, frame = cap.read()
         cv2.imshow('CCTV', frame)
 
-        if count % 1200 == 0:
+        if count % 600 == 0:
             print("Sending image to GCloud for analysis...")
             if x != None:
                 x.join()
