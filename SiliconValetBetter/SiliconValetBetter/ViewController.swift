@@ -24,6 +24,7 @@ class ViewController: UIViewController {
             self.open =  x["values"]
             print("UPDATED")
             print(self.open)
+            self.didTapButton(nil)
             
         })
 
@@ -35,7 +36,7 @@ class ViewController: UIViewController {
     // find closest parking
     
     
-    @IBAction func didTapButton(_ sender: Any) {
+    @IBAction func didTapButton(_ sender: Any?) {
         
         let latitude = [38.986352,38.986370, 38.986393,38.986407,38.986429,38.986321,38.986340,38.986368,38.986393, 38.986409,38.986274, 38.986298, 38.986319, 38.986337,38.986368, 38.986384, 38.986408, 38.986434,38.986460,38.986472,38.986253,38.986273,38.986295, 38.986320,38.986343,38.986366,38.986386,38.986401,38.986433,38.986452, 38.986203,38.986223,38.986251,38.986265,38.986292,38.986317, 38.986337,38.986359,38.986393,38.986400]
 
