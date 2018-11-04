@@ -28,12 +28,7 @@ class ProxyManager: NSObject {
         // Used for TCP/IP Connection
          let lifecycleConfiguration = SDLLifecycleConfiguration(appName: appName, fullAppId: appId, ipAddress: "10.105.129.14", port: 12345)
         
-       /*let display = SDLSetDisplayLayout(predefinedLayout: .textAndSoftButtonsWithGraphic)
-         sdlManager.send(request: display) { (request, response, error) in
-            if response?.resultCode == .success {
-                // The template has been set successfully
-            }
-        }*/
+        
         // App icon image
         if let appImage = UIImage(named: "siliconValley") {
             let appIcon = SDLArtwork(image: appImage, persistent: true, as: .PNG)
@@ -56,7 +51,7 @@ class ProxyManager: NSObject {
             }
         }
     }
-    
+
     func setTemplate() {
         let display = SDLSetDisplayLayout(predefinedLayout: .textAndSoftButtonsWithGraphic)
         sdlManager.send(request: display) { (request, response, error) in
@@ -66,9 +61,8 @@ class ProxyManager: NSObject {
         }
     }
     
-   func SendLocationBetter(longitude: Float64, latitude: Float64) {
+    func SendLocationBetter(longitude: Float64, latitude: Float64, locationName: String) {
         
-    
         
         sdlManager.start { (success, error) in
             if !success {
@@ -83,7 +77,7 @@ class ProxyManager: NSObject {
         }
         
         
-        let sendLocation = SDLSendLocation(longitude : longitude, latitude: latitude, locationName: "Free Space", locationDescription: "Center of the United States", address: ["900 Whiting Dr", "Yankton, SD 57078"], phoneNumber: nil, image: nil)
+        let sendLocation = SDLSendLocation(longitude : longitude, latitude: latitude, locationName: locationName, locationDescription: "University of Maryland Car Park", address: ["7777 Baltimore Ave, College Park, MD 20740"], phoneNumber: nil, image: nil)
         
         sdlManager.send(request: sendLocation) { (request, response, error) in
             guard let response = response as? SDLSendLocationResponse else { return }
