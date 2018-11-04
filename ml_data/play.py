@@ -54,11 +54,14 @@ if __name__ == '__main__':
     x = None
 
     cap = cv2.VideoCapture('fastcars.mov')
+    cv2.namedWindow("CCTV", cv2.WINDOW_NORMAL)
+    cv2.resizeWindow("CCTV", 700, 700)
     while(cap.isOpened()):
         count += 1
         ret, frame = cap.read()
         try:
             cv2.imshow('CCTV', frame)
+            cv2.resizeWindow("CCTV", 700, 700)
         except:
             break
 
