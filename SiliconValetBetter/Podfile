@@ -7,7 +7,12 @@ target 'SiliconValetBetter' do
 
   # Pods for SiliconValetBetter
   pod ‘SmartDeviceLink’, ‘~> 6.1.0’
+  
+  source 'https://github.com/CocoaPods/Specs.git'
 
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  
   target 'SiliconValetBetterTests' do
     inherit! :search_paths
     # Pods for testing

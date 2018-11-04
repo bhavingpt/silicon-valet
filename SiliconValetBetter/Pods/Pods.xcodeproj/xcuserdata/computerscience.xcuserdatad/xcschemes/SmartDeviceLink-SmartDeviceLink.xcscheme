@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F25B5E3A3592788B1EE52A9A1FB78CB7"
+               BlueprintIdentifier = "DAA29BD37C00A1053B7B62669F0AD8A2"
                BuildableName = "SmartDeviceLink.bundle"
                BlueprintName = "SmartDeviceLink-SmartDeviceLink"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F25B5E3A3592788B1EE52A9A1FB78CB7"
+            BlueprintIdentifier = "DAA29BD37C00A1053B7B62669F0AD8A2"
             BuildableName = "SmartDeviceLink.bundle"
             BlueprintName = "SmartDeviceLink-SmartDeviceLink"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -68,7 +68,7 @@ class ProxyManager: NSObject {
     
    func SendLocationBetter(longitude: Float64, latitude: Float64) {
         
-        var isNavigationSupported = false
+    
         
         sdlManager.start { (success, error) in
             if !success {
@@ -77,6 +77,7 @@ class ProxyManager: NSObject {
             }
             
             if let hmiCapabilities = self.sdlManager.systemCapabilityManager.hmiCapabilities, let navigationSupported = hmiCapabilities.navigation?.boolValue {
+                var isNavigationSupported = false
                 isNavigationSupported = navigationSupported
             }
         }
