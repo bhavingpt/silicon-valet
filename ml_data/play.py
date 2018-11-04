@@ -1,7 +1,5 @@
-import subprocess as sp
 import threading
-import sys, json
-import os
+import sys, os
 
 import firebase_admin
 from firebase_admin import credentials
@@ -11,6 +9,8 @@ from google.cloud import automl_v1beta1
 from google.cloud.automl_v1beta1.proto import service_pb2
 
 from process import create_img
+
+import cv2
 
 answers = [""] * 40
 
@@ -42,10 +42,26 @@ def get_prediction(content, i, project_id="cs-342-219716", model_id="ICN85529970
     answers[i] = s
 
 if __name__ == '__main__':
-    file_path = sys.argv[1]
-
     cred = credentials.Certificate("/Users/Bhavin/Downloads/cs-342-219716-5ca14b5f4042.json")
     firebase_admin.initialize_app(cred, {'databaseURL':'https://cs-342-219716.firebaseio.com/'})
+    count = -10
 
-    analyze_image(file_path)
-    print(answers)
+    cap = cv2.VideoCapture('fastcars.mov')
+    while(cap.isOpened()):
+        count += 1
+        ret, frame = cap.read()
+        cv2.imshow('CCTV', frame)
+
+        if count % 500 == 0:
+            file_ext = "frame%d.png" % count
+            if os.path.exists(file_ext):
+                os.remove(file_ext)
+            cv2.imwrite(file_ext, frame)
+            x = threading.Thread(target=analyze_image, args = (file_ext,), kwargs = {})
+            x.start()
+
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+
+    cap.release()
+    cv2.destroyAllWindows()
